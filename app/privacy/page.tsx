@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import LegalLayout, { LegalSection } from '@/components/LegalLayout';
+import PrivacyContactForm from '@/components/PrivacyContactForm';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -445,8 +446,9 @@ export default function PrivacyPage() {
           </li>
         </ul>
         <p>
-          We aim to respond to all privacy requests within 30 days.
+          Or submit a privacy request directly using the form below. We respond within 30 days.
         </p>
+        <PrivacyContactForm />
       </LegalSection>
     </LegalLayout>
   );
